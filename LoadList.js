@@ -1,9 +1,9 @@
 import React from "react";
 
-function LoadList ({id,completed,content}) {
-  console.log(id+completed+content+"Hello");
+function LoadList (props) {
+  console.log(props)
+  const {id,content,completed} = props
    return( 
-     
       <li className="list-group-item">
         <div className="list-item">
           <input id={id} type="checkbox" defaultChecked={completed} />
